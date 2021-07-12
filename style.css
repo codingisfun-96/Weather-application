@@ -1,0 +1,206 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Nunito",sans-serif;
+  background: #007997;
+}
+
+.input{
+  text-align: center;
+  margin: 100px auto;
+}
+.header h1{
+  position: relative;
+  font-size: 38px;
+  text-align: center; 
+}
+.header p{
+  margin-left: 15px;
+  color: #ffa807;
+}
+/* .header img{
+  position: absolute;
+  left: 30%;
+  top:2%
+} */
+input[type="submit"]{
+  padding: 15px 30px;
+  background: #12a5fa;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-left: 20px;
+  border-radius: 50px;
+  font-family: "Nunito",sans-serif;
+  font-weight:bold;
+  font-size: 20px;
+}
+input[type="submit"]:hover{
+  background: #02d9ff;
+}
+
+.input input[type="text"]{
+  width: 600px;
+  height: 55px;
+  padding: 5px 10px;
+  background: #e7e7e7;
+  border: none;
+  color: darkslategrey;
+  outline: none;
+  text-align: center;
+  text-overflow:unset;
+  border-radius: 50px;
+  font-family: "Nunito",sans-serif;
+  font-weight:bold;
+  font-size: 20px;
+}
+
+.main{
+  position: relative;
+  color: #fff;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.card{
+  position: relative;
+  width: 50%;
+  background: #999999c9;
+  height: 40vh;
+  margin: 50px auto;
+  border-radius: 5px;
+}
+
+.clouds{
+  float: right;
+  margin-top: -2px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.card h1{
+  padding: 30px 0;
+  text-align: center;
+  color:rgb(1, 2, 46);
+}
+
+.card p{
+  text-align: center;
+  margin:20px 0;
+  font-size:20px;
+  color: #fff ;
+}
+
+.status{
+  position: absolute;
+  display:none;
+  left: 65%;
+  top: 40%;
+  border: none;
+  outline: none;
+  width:80px;
+  height: 80px;
+}
+
+@media only screen and (min-width: 360px){
+  .input input[type="text"] , .card{
+    width: 80%;
+    font-size: medium;
+  }
+  input[type="submit"]{
+    margin: 10px auto;
+  }
+  .status{
+    position: absolute;
+    display:none;
+    left: 75%;
+    top: 40%;
+    border: none;
+    outline: none;
+    width:40px;
+    height: 40px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .input input[type="text"]{
+  width: 600px;
+  height: 55px;
+  padding: 5px 10px;
+  background: #e7e7e7;
+  border: none;
+  color: darkslategrey;
+  outline: none;
+  text-align: center;
+  text-overflow:unset;
+  border-radius: 50px;
+  font-family: "Nunito",sans-serif;
+  font-weight:bold;
+  font-size: 20px;
+  }
+  .card{
+    position: relative;
+    width: 50%;
+    background: #999999c9;
+    height: 40vh;
+    margin: 50px auto;
+    border-radius: 5px;
+  }
+  input[type="submit"]{
+    padding: 15px 30px;
+    margin-left: 20px;
+  }
+}
+@media only screen and (min-width: 600px){
+  .input input[type="text"] , .card{
+    width: 80%;
+    font-size: medium;
+  }
+  input[type="submit"]{
+    margin: 30px 10px 0 auto;
+    margin-left: 70px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .input input[type="text"]{
+  width: 600px;
+  height: 55px;
+  padding: 5px 10px;
+  background: #e7e7e7;
+  border: none;
+  color: darkslategrey;
+  outline: none;
+  text-align: center;
+  text-overflow:unset;
+  border-radius: 50px;
+  font-family: "Nunito",sans-serif;
+  font-weight:bold;
+  font-size: 20px;
+  }
+  .card{
+    position: relative;
+    width: 50%;
+    background: #999999c9;
+    height: 40vh;
+    margin: 50px auto;
+    border-radius: 5px;
+  }
+  input[type="submit"]{
+    padding: 15px 30px;
+    margin-left: 20px;
+  }
+  .status{
+    position: absolute;
+    display:none;
+    left: 65%;
+    top: 35%;
+    border: none;
+    outline: none;
+    width:80px;
+    height: 80px;
+  }
+}
