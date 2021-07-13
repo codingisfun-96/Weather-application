@@ -3,4 +3,4 @@ Weather forecast application using html, css &amp; javascript. It uses Open Weat
 Trying to make the page mobile & tablet responsive.
 
 Here's a screenshot of the application:
-<img src=“image/weather.png”>
+<img src=“https://github.com/codingisfun-96/Weather-application/blob/main/image/weather.png”>
