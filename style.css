@@ -83,13 +83,6 @@ input[type="submit"]:hover{
   border-radius: 5px; */
 }
 
-.clouds{
-  float: right;
-  margin-top: -2px;
-  cursor: pointer;
-  margin-right: 20px;
-}
-
 .input .name{
   padding: 40px 0;
   margin-right: 120px;
