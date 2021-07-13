@@ -27,7 +27,8 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=2
   var temp_val = KtoC(tempVal);
   main.innerHTML = nameVal.toUpperCase();
   desc.innerHTML = ""+descVal;
-  temp.innerHTML = "Temparature: "+temp_val +"&#8451";
+  temp.innerHTML = ""+temp_val +"&#8451";
+  // console.log(data);
   // input.value ="";
   if(descVal =='haze'){
     status.src = "image/haze.png"
@@ -62,6 +63,10 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=2
     status.style.display = "block";
   }
   else if(descVal =='overcast clouds'){
+    status.src = "image/haze.png"
+    status.style.display = "block";
+  }
+  else if(descVal =='mist'){
     status.src = "image/haze.png"
     status.style.display = "block";
   }
