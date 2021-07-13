@@ -67,7 +67,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=2
     status.style.display = "block";
   }
   else if(descVal =='overcast clouds'){
-    status.src = "image/haze.png"
+    status.src = "image/overcast.png"
     status.style.display = "block";
   }
   else if(descVal =='mist'){
