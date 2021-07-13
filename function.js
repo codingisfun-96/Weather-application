@@ -17,6 +17,10 @@ function clear(){
   document.getElementById("textfield2").value = "temp";
 }
 button.addEventListener('click', function(name){
+if (input.value == ""){
+  alert("Please enter the name of any city!");
+  return false;
+}
 fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=2761faaf05492b21252a882ff39c9321')
 .then(response => response.json())
 .then(data => {
@@ -67,12 +71,11 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=2
     status.style.display = "block";
   }
   else if(descVal =='mist'){
-    status.src = "image/haze.png"
+    status.src = "image/mist.png"
     status.style.display = "block";
   }
 })
-
-.catch(err => alert("You might have typed the name of the city incorrectly!"));
+.catch(err=> alert("You might have typed the name of the city incorrectly!"));
   var status = document.getElementById("status");
   main.innerHTML = "";
   desc.innerHTML = "";
