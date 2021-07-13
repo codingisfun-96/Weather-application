@@ -21,7 +21,7 @@ if (input.value == ""){
   alert("Please enter the name of any city!");
   return false;
 }
-fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=2761faaf05492b21252a882ff39c9321')
+fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=<your api key>')
 .then(response => response.json())
 .then(data => {
   var tempVal = data['main']['temp'];
